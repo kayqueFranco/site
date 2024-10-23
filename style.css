@@ -1,54 +1,133 @@
 @charset "UTF-8";
 
+/*inportação de fontes (google fonts)*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/*CSS Reset (Compatibilizar com todos navegadores )*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+/* Layout*/
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    /* 1em = 100%  (tamanho padrão)*/
+}
+
+.container {
+    margin: 0 auto;
+    /* Centralizar o bloco */
+
+}
 
 /***** Bralpoits ******/
 
 /* Smartphone Portrait>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<*/
+/*cabeçalho*/
+header {
+    height: 85px;
+    background-color: #9492a8;
+}
+
+#logo img {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Smartphone Landscape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
-    body {
-        background-color: #00ff00;
-        
+
+    /*cabeçalho*/
+    #logo img {
+        margin: 0px 0px 0px 0px;
     }
 }
+
+.container {
+    max-width: 540px;
+    background-color: #9492a8;
+}
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Tablet Portrati>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px) {
-    body {
-        background-color: #ffff00;
-        
+
+    /*cabeçalho*/
+    .container {
+        max-width: 720px;
+        background-color: #9492a8;
+    }
+
+    header {
+        height: 110px;
+    }
+
+    #logo img {
+        width: 125x;
+        height: 125px;
     }
 }
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Tablet Landscape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px) {
-    body {
-        background-color: #00ffff;
-        
+
+    /*cabeçalho*/
+    .container {
+        max-width: 960px;
+        background-color: #9492a8;
     }
+
 }
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*PCs /Notbooks>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px) {
-    body {
-        background-color: #ff0000;
-        color:bisque
-        
+
+    /*cabeçalho8*/
+    .container {
+        max-width: 1140px;
+        background-color: #9492a8;
+    }
+
+    header {
+        height: 130px;
+    }
+
+    #logo img {
+        width: 126px;
+        height: 126px;
     }
 }
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-/*Telas FullHD /4k /SmartTVs*/
+/*Telas FullHD /4k /SmartTVs* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1400px) {
-    body {
-        background-color: #4b0082;
-        color:#ffff;
-    }
+        .container {
+            max-width: 1360px;
+            background-color: #9492a8;
+        }
+        header {
+            height: 150px;
+        }
+        #logo img {
+            width: 150px;
+            height: 150px;
+            margin: 10px 0px 0px 0px ;
+        }
 }
+
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
