@@ -4,6 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
+/*variaveis*/
+
+:root {
+    --cinza: #9492a8;
+    --branco: #fff;
+    --preto: #383737;
+}
+
 /*CSS Reset (Compatibilizar com todos navegadores )*/
 * {
     margin: 0;
@@ -16,6 +24,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
+    text-align: center;
     /* 1em = 100%  (tamanho padrão)*/
 }
 
@@ -30,7 +39,7 @@ body {
 /* Smartphone Portrait>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<*/
 /*cabeçalho*/
 header {
-    height: 85px;
+    height: 100px;
     background-color: #9492a8;
 }
 
@@ -41,6 +50,49 @@ header {
     margin-bottom: 10px;
 }
 
+#check {
+    display: none;
+}
+/* Efeito de deslizar o menu*/
+/* Se check estiver ticado, criar um estilo para ul*/
+#check:checked~ul {
+    left: 0;
+    transition: 0.9s;
+
+}
+
+label {
+    font-size:1.9em;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: rgba(0,0,0, 0.5);
+
+}
+
+nav ul {
+    height: 100vh;  /*100 vh - 100% da autura da tela*/
+    background-color: var(--preto);
+    list-style: none; /*remover bullets*/
+    width: 65%;
+    position: fixed;
+    top: 100px;
+    left: -65%;
+    transform: 0.5s;
+
+
+}
+
+nav ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--branco);
+    text-align: left;
+}
+
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Smartphone Landscape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
