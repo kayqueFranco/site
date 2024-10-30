@@ -7,9 +7,13 @@
 /*variaveis*/
 
 :root {
-    --cinza: #9492a8;
+    --cinza-claro: #9492a8;
     --branco: #fff;
-    --preto: #383737;
+    --cinza-escuro: #383737;
+    --preto:#000000;
+    --vermelho:rgb(245, 15, 15);
+
+
 }
 
 /*CSS Reset (Compatibilizar com todos navegadores )*/
@@ -30,8 +34,24 @@ body {
 
 .container {
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     /* Centralizar o bloco */
 
+}
+.botao {
+    text-decoration: none;
+    color:var(--preto);
+    font-size: 1.3em;
+    background-color: var(--cinza-escuro);
+    font-weight: 700;
+    width :200px ;
+    padding: 2px 0px;
+    border: 2px solid var(--preto);
+    border-radius: 25px;
+    align-self: center;
+    margin-top: 25px;
 }
 
 /***** Bralpoits ******/
@@ -40,7 +60,7 @@ body {
 /*cabeçalho*/
 header {
     height: 100px;
-    background-color: #9492a8;
+   
 }
 
 #logo img {
@@ -48,6 +68,7 @@ header {
     height: 100px;
     margin-left: 10px;
     margin-bottom: 10px;
+    
 }
 
 #check {
@@ -93,6 +114,35 @@ nav ul li a {
     color: var(--branco);
     text-decoration: none;
 }
+
+/* Banner*/
+
+main {
+    height: 75vh;
+    background: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+main h1,h2 {
+    color: var(--branco);
+    text-shadow: #000  0.05em 0.05em 0.05em; /* sombra*/
+}
+main h1 {
+    font-size: 2em;
+}
+
+main h2 {
+    font-size: 1.8em;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Smartphone Landscape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -101,23 +151,24 @@ nav ul li a {
     /*cabeçalho*/
     #logo img {
         margin: 0px 0px 0px 0px;
+        
     }
 }
 
 .container {
     max-width: 540px;
-    background-color: #9492a8;
+    
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-/*Tablet Portrati>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*Tablet Portrat>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 768px) {
 
     /*cabeçalho*/
     .container {
         max-width: 720px;
-        background-color: #9492a8;
+        
     }
 
     header {
@@ -127,6 +178,12 @@ nav ul li a {
     #logo img {
         width: 125x;
         height: 125px;
+    }
+
+    nav ul {
+        top: 110px;
+        width: 50%;
+        left: -50%;
     }
 }
 
@@ -138,7 +195,7 @@ nav ul li a {
     /*cabeçalho*/
     .container {
         max-width: 960px;
-        background-color: #9492a8;
+        
     }
 
 }
@@ -151,8 +208,9 @@ nav ul li a {
     /*cabeçalho8*/
     .container {
         max-width: 1140px;
-        background-color: #9492a8;
+      
     }
+    /* Cabeçalho*/
 
     header {
         height: 130px;
@@ -162,6 +220,32 @@ nav ul li a {
         width: 126px;
         height: 126px;
     }
+    /*Transformação no menu*/
+    label { 
+        display: none;
+    }
+    nav ul {
+        width: 100%;
+        height: auto;
+        position: static;
+        /*background-color: transparent; /* Cor transparente*/
+
+    }
+    nav ul li {
+        float: left;
+        border: 0;
+
+    }
+
+    nav ul li a {
+        color:var(--preto)
+        
+    }
+
+    nav ul li a:hover {
+        color: var(--vermelho);
+    }
+    
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -170,7 +254,7 @@ nav ul li a {
 @media (min-width: 1400px) {
         .container {
             max-width: 1360px;
-            background-color: #9492a8;
+            
         }
         header {
             height: 150px;
