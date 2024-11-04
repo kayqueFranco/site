@@ -9,7 +9,7 @@
 :root {
     --cinza-claro: #9492a8;
     --branco: #fff;
-    --cinza-escuro: #383737;
+    --cinza-escuro: #000000;
     --preto:#000000;
     --vermelho:rgb(245, 15, 15);
 
@@ -42,7 +42,7 @@ body {
 }
 .botao {
     text-decoration: none;
-    color:var(--preto);
+    color:var(--branco);
     font-size: 1.3em;
     background-color: var(--cinza-escuro);
     font-weight: 700;
