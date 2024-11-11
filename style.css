@@ -10,8 +10,8 @@
     --cinza-claro: #9492a8;
     --branco: #fff;
     --cinza-escuro: #000000;
-    --preto:#000000;
-    --vermelho:rgb(245, 15, 15);
+    --preto: #000000;
+    --vermelho: rgb(245, 15, 15);
 
 
 }
@@ -24,11 +24,13 @@
 
 }
 
-/* Layout*/
+
+
+
+/* Layout>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
-    text-align: center;
     /* 1em = 100%  (tamanho padrão)*/
 }
 
@@ -40,19 +42,24 @@ body {
     /* Centralizar o bloco */
 
 }
+
 .botao {
     text-decoration: none;
-    color:var(--branco);
+    color: var(--branco);
     font-size: 1.3em;
     background-color: var(--cinza-escuro);
     font-weight: 700;
-    width :200px ;
+    width: 200px;
     padding: 2px 0px;
     border: 2px solid var(--preto);
     border-radius: 25px;
     align-self: center;
     margin-top: 25px;
 }
+/* Fim do layout>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+
 
 /***** Bralpoits ******/
 
@@ -60,7 +67,7 @@ body {
 /*cabeçalho*/
 header {
     height: 100px;
-   
+
 }
 
 #logo img {
@@ -68,12 +75,13 @@ header {
     height: 100px;
     margin-left: 10px;
     margin-bottom: 10px;
-    
+
 }
 
 #check {
     display: none;
 }
+
 /* Efeito de deslizar o menu*/
 /* Se check estiver ticado, criar um estilo para ul*/
 #check:checked~ul {
@@ -83,18 +91,20 @@ header {
 }
 
 label {
-    font-size:1.9em;
+    font-size: 1.9em;
     position: fixed;
     top: 15px;
     right: 15px;
-    color: rgba(0,0,0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
 
 }
 
 nav ul {
-    height: 100vh;  /*100 vh - 100% da autura da tela*/
-    background-color:  rgba(0, 0, 0, 0.795) ;
-    list-style: none; /*remover bullets*/
+    height: 100vh;
+    /*100 vh - 100% da autura da tela*/
+    background-color: rgba(0, 0, 0, 0.795);
+    list-style: none;
+    /*remover bullets*/
     width: 65%;
     position: fixed;
     top: 100px;
@@ -115,24 +125,27 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Banner*/
+/* Banner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 main {
     height: 75vh;
     background: url(img/banner.jpg);
     background-size: cover;
     background-position: center;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 
 }
 
-main h1,h2 {
+main h1,
+h2 {
     color: var(--branco);
-    text-shadow: #000  0.05em 0.05em 0.05em; /* sombra*/
+    text-shadow: #000 0.05em 0.05em 0.05em;
+    /* sombra*/
 }
+
 main h1 {
     font-size: 2em;
 }
@@ -143,6 +156,7 @@ main h2 {
     font-family: 'Times New Roman', Times, serif;
 
 }
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Smartphone Landscape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -151,13 +165,13 @@ main h2 {
     /*cabeçalho*/
     #logo img {
         margin: 0px 0px 0px 0px;
-        
+
     }
 }
 
 .container {
     max-width: 540px;
-    
+
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -168,7 +182,7 @@ main h2 {
     /*cabeçalho*/
     .container {
         max-width: 720px;
-        
+
     }
 
     header {
@@ -190,6 +204,7 @@ main h2 {
     main h1 {
         font-size: 3.8em;
     }
+
     main h2 {
         font-size: 3em;
     }
@@ -204,7 +219,7 @@ main h2 {
     /*cabeçalho*/
     .container {
         max-width: 960px;
-        
+
     }
 
 }
@@ -217,8 +232,9 @@ main h2 {
     /*cabeçalho8*/
     .container {
         max-width: 1140px;
-      
+
     }
+
     /* Cabeçalho*/
 
     header {
@@ -229,10 +245,12 @@ main h2 {
         width: 126px;
         height: 126px;
     }
+
     /*Transformação no menu*/
-    label { 
+    label {
         display: none;
     }
+
     nav ul {
         width: 100%;
         height: auto;
@@ -240,6 +258,7 @@ main h2 {
         /*background-color: transparent; /* Cor transparente*/
 
     }
+
     nav ul li {
         float: left;
         border: 0;
@@ -247,8 +266,7 @@ main h2 {
     }
 
     nav ul li a {
-        color:var(--preto)
-        
+        color: var(--preto)
     }
 
     nav ul li a:hover {
@@ -256,25 +274,27 @@ main h2 {
     }
 
     /* Banner*/
-    
+
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Telas FullHD /4k /SmartTVs* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1400px) {
-        .container {
-            max-width: 1360px;
-            
-        }
-        header {
-            height: 150px;
-        }
-        #logo img {
-            width: 150px;
-            height: 150px;
-            margin: 10px 0px 0px 0px ;
-        }
+    .container {
+        max-width: 1360px;
+
+    }
+
+    header {
+        height: 150px;
+    }
+
+    #logo img {
+        width: 150px;
+        height: 150px;
+        margin: 10px 0px 0px 0px;
+    }
 }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
