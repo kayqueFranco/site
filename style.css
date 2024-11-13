@@ -158,7 +158,7 @@ main h2 {
 }
 /**************************Destaque************************(****/
 #destaque {
-    background: url(img/back.webp);
+    background: url(img/back.jpg);
     background-size: cover;
     background-position: center;
     padding: 50px 15px;
@@ -185,7 +185,7 @@ main h2 {
 
 
 #textoDestaque{
-    color: var(--cinza-escuro);
+    color: var(--branco);
     
 }
 #textoDestaque h2 {
@@ -195,7 +195,7 @@ main h2 {
 /*Atenção !!! Detalhe do sinal ">" referente ao elemento imediato*/
 
 #textoDestaque>p {
-    color: var(--azul);
+    color: var(--branco);
     margin-bottom: 15px;
 }
 .topicos {
