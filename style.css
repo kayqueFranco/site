@@ -109,7 +109,7 @@ nav ul {
     position: fixed;
     top: 100px;
     left: -65%;
-    transform: 0.5s;
+    transition: 0.5s;
 
 
 }
@@ -156,22 +156,108 @@ main h2 {
     font-family: 'Times New Roman', Times, serif;
 
 }
+/**************************Destaque****************************/
+#destaque {
+    background: url(img/back.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+    /*pasamento interno para não encostar na borda do dispositivo*/
+}
+
+/*organizando o container após o destaque o estilo é aplicado apenas ao container de seção de destaque*/
+#destaque .container {
+    flex-direction: column;
+    align-items: center;
+}
+/*para  escorder a imagem, usamos display: none no container da imagem | para exibir novamente em telas maiores,usamos display: block*/
+
+/*#imagemDestaque {
+    display: none;
+}*/
+
+#imagemDestaque img{
+    width: 200px;
+    height: 200px;
+    /*Arredondar imagem quadrada*/
+    border-radius: 50%;
+}
+
+
+#textoDestaque{
+    color: var(--cinza-escuro);
+    
+}
+#textoDestaque h2 {
+    margin-bottom: 20px;
+
+}
+/*Atenção !!! Detalhe do sinal ">" referente ao elemento imediato*/
+
+#textoDestaque>p {
+    color: var(--azul);
+    margin-bottom: 15px;
+}
+.topicos {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+
+}
+
+.topicos img {
+    margin-right: 10px;
+
+}
+
+.topicos p {
+    font-weight: 600 ;
+}
+
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Smartphone Landscape>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
 
-    /*cabeçalho*/
-    #logo img {
-        margin: 0px 0px 0px 0px;
+     /****** Layout ******/
+     .container {
+        max-width: 540px;
+        /* background-color: #ffff00;*/
+    }
+
+    /****** Cabeçalho ******/
+    nav ul {
+        right: -25%;
+        width: 25%;
+    }
+
+    /****** Banner ******/
+    main {
+        height: 100vh;
+    }
+
+    main h1 {
+        font-size: 3em;
+    }
+
+    /*Destaque */
+
+    #destaque .container {
+        flex-direction: row;
 
     }
-}
 
-.container {
-    max-width: 540px;
+    #imagemDestaque{
+        margin-right: 50px;
+    }
 
+    #imagemDestaque img {
+        width: 256px;
+        height: 256px;
+
+    }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -190,7 +276,7 @@ main h2 {
     }
 
     #logo img {
-        width: 125x;
+        width: 125px;
         height: 125px;
     }
 
@@ -209,6 +295,11 @@ main h2 {
         font-size: 3em;
     }
 
+    #imagemDestaque img {
+        width: 440px;
+        height: 440px;
+    }
+
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -220,6 +311,10 @@ main h2 {
     .container {
         max-width: 960px;
 
+    }
+
+    main {
+        height: 70vh;
     }
 
 }
@@ -274,6 +369,18 @@ main h2 {
     }
 
     /* Banner*/
+    main h1 {
+        font-size: 6em;
+
+    }
+    main h2 {
+        font-size:3em;
+    }
+
+    #destaque {
+        background-attachment: fixed;
+    }
+
 
 }
 
