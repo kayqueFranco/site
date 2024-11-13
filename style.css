@@ -158,7 +158,7 @@ main h2 {
 }
 /**************************Destaque****************************/
 #destaque {
-    background: url(img/back.jpg);
+    background: url(img/back.webp);
     background-size: cover;
     background-position: center;
     padding: 50px 15px;
