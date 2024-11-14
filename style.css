@@ -287,6 +287,11 @@ main h2 {
     }
 
     /* Banner*/
+
+    main {
+        height: 65vh;
+
+    }
     main h1 {
         font-size: 3.8em;
     }
@@ -299,6 +304,7 @@ main h2 {
         width: 440px;
         height: 440px;
     }
+    
 
 }
 
