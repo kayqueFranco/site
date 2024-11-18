@@ -136,11 +136,11 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    color:var(--branco)
 
 }
 
-main h1,
-h2 {
+main h1 h2 {
     color: var(--branco);
     text-shadow: #000 0.05em 0.05em 0.05em;
     /* sombra*/
@@ -202,17 +202,36 @@ main h2 {
     display: flex;
     align-items: center;
     margin-top: 5px;
-
-
+  
 }
 
 .topicos img {
     margin-right: 10px;
-
+  
 }
 
 .topicos p {
     font-weight: 600 ;
+    color: var(--branco);
+}
+
+/******sobre******/
+#sobre .container {
+    flex-direction: column;
+}
+#sobre {
+    padding: 50px 15px;
+}
+#sobre h2, p {
+    color: var(--preto);
+}
+#sobre h2 {
+    margin-bottom: 20px;
+}
+#video iframe {
+    width: 340px;
+    height: 191px;
+    margin-top: 20px;
 }
 
 
@@ -257,6 +276,11 @@ main h2 {
         width: 256px;
         height: 256px;
 
+    }
+    /******sobre******/
+    #video iframe {
+        width: 560px;
+        height: 315px;
     }
 }
 
@@ -385,6 +409,15 @@ main h2 {
 
     #destaque {
         background-attachment: fixed;
+    }
+
+    /******sobre******/
+    #sobre .container {
+        flex-direction: row;
+        align-items: center;
+    }
+    #video iframe {
+        margin:0;
     }
 
 
