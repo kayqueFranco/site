@@ -4,3 +4,5 @@
 Estudo do HTML5 e CSS3
 ## Autor
 Kayque Franco
+## Site 
+![](img/qrcode.png)
