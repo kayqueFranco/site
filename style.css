@@ -47,11 +47,11 @@ body {
     text-decoration: none;
     color: var(--branco);
     font-size: 1.3em;
-    background-color: var(--cinza-escuro);
+    background-color: var(--preto);
     font-weight: 700;
     width: 200px;
     padding: 2px 0px;
-    border: 2px solid var(--preto);
+    border: 2px solid var(--preto) ;
     border-radius: 25px;
     align-self: center;
     margin-top: 25px;
@@ -189,7 +189,7 @@ main h2 {
     
 }
 #textoDestaque h2 {
-    margin-bottom: 20px;
+    
 
 }
 /*Atenção !!! Detalhe do sinal ">" referente ao elemento imediato*/
@@ -232,6 +232,32 @@ main h2 {
     width: 340px;
     height: 191px;
     margin-top: 20px;
+}
+/******Faixa de Destaque******/
+#faixaDestaque{
+    background: url(img/back.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+}
+#faixaDestaque .container {
+    flex-direction: column;
+    text-align: center;
+}
+#imagemFaixa img {
+    width: 256px;
+    height: 256px;
+}
+
+#textoFaixa h2 {
+    color: var(--branco);
+    font-size: 3em;
+    
+}
+#textoFaixa p {
+    color:var(--branco);
+    font-size: 1em;
+    
 }
 
 
@@ -419,6 +445,22 @@ main h2 {
     #video iframe {
         margin: 0px 0px 0px 29px;
     }
+    /******faixa de destaque******/
+    #faixaDestaque{
+        background-attachment: fixed;
+        
+    }
+    
+    #faixaDestaque .container {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    #imagemFaixa img {
+        width: 200px;
+        height: 200px;
+        padding: 0px 250px;
+    }
+
 
 
 }
