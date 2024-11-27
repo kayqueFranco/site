@@ -56,6 +56,20 @@ body {
     align-self: center;
     margin-top: 25px;
 }
+.botao1 {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.3em;
+    background-color: var(--preto);
+    font-weight: 700;
+    width: 200px;
+    padding: 5px 10px;
+    border: 2px solid var(--preto) ;
+    border-radius: 25px;
+    align-self: center;
+    margin-top: 25px;
+}
+
 /* Fim do layout>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
@@ -252,12 +266,13 @@ main h2 {
 #textoFaixa h2 {
     color: var(--branco);
     font-size: 3em;
+    margin-bottom: 5px;
     
 }
 #textoFaixa p {
     color:var(--branco);
     font-size: 1em;
-    
+    margin-bottom: 30px;
 }
 
 
@@ -459,6 +474,14 @@ main h2 {
         width: 200px;
         height: 200px;
         padding: 0px 250px;
+    }
+    #textoFaixa h2 {
+        font-size: 3em;
+        margin-bottom: 30px;
+    }
+    #textoFaixa p {
+        
+        margin-bottom: 30px;
     }
 
 
