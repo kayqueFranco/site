@@ -12,6 +12,7 @@
     --cinza-escuro: #000000;
     --preto: #000000;
     --vermelho: rgb(245, 15, 15);
+    
 
 
 }
@@ -68,6 +69,42 @@ body {
     border-radius: 25px;
     align-self: center;
     margin-top: 25px;
+}
+
+.card {
+    width: 338px;
+    height: 520px;
+    margin-top: 20px;
+    border: 1px solid var(--cinza-escuro);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 25px 25px 0px 0px ;
+    width: 300px;
+    height: 240px;
+    margin-top: 20px;
+
+}
+
+.card h3 {
+    margin-top: 15px;
+    
+}
+
+.card p {
+    text-align: left;
+    padding: 10px 30px 50px 30px ;
+   
+}
+
+.card a {
+    padding: 10px 100px;
+    border:0;
+    background-color: var(--preto);
+    color: var(--branco);
+
 }
 
 /* Fim do layout>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -203,7 +240,7 @@ main h2 {
     
 }
 #textoDestaque h2 {
-    
+    margin-bottom:20px ;
 
 }
 /*Atenção !!! Detalhe do sinal ">" referente ao elemento imediato*/
@@ -275,6 +312,34 @@ main h2 {
     margin-bottom: 30px;
 }
 
+/*seção de conteúdo (cards)*/
+#conteudo {
+    padding:50px 0px; 
+}
+#conteudo .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudo h2 {
+    color: var(--preto);
+    margin-bottom: 25px;
+}
+
+#todos  {
+    color:var(--preto);
+    margin-top: 50px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.containerCards {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+
+}
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -322,6 +387,10 @@ main h2 {
     #video iframe {
         width: 560px;
         height: 315px;
+    }
+
+    .card {
+        margin: 0px 10px;
     }
 }
 
