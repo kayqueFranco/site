@@ -281,6 +281,7 @@ main h2 {
 /******sobre******/
 #sobre .container {
     flex-direction: column;
+
 }
 #sobre {
     padding: 50px 15px;
@@ -363,15 +364,15 @@ footer {
   footer a {
     text-decoration: none;
     color: #fff;
+    
+    
   }
   
   #social {
     margin-bottom: 25px;
   }
 
-  #nome{
-    
-  }
+ 
   
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
