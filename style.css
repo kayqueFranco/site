@@ -29,6 +29,10 @@
 
 
 /* Layout>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+html {
+    /*rolagem suave do conteudo*/
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
@@ -104,6 +108,14 @@ body {
     border:0;
     background-color: var(--preto);
     color: var(--branco);
+
+}
+
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
 
 }
 
@@ -340,6 +352,27 @@ main h2 {
     justify-content: center;
 
 }
+footer {
+    padding: 50px 0px;
+    background-color: #343538;
+    font-size: 0.875em;
+    color: #fff;
+    text-align: center;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #social {
+    margin-bottom: 25px;
+  }
+
+  #nome{
+    
+  }
+  
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -554,7 +587,7 @@ main h2 {
     }
 
 
-
+   
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
