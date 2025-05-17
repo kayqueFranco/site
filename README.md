@@ -10,12 +10,30 @@
     </a>
 </p>
    
+# Site Pessoal
+
+Este é um projeto pessoal criado para estudo e prática de desenvolvimento web com foco em **HTML5** e **CSS3**. O objetivo principal é construir uma página web simples, responsiva e bem estruturada, aplicando conceitos básicos e boas práticas de front-end.
+
+## Tecnologias Utilizadas
+
+- HTML5  
+- CSS3  
+
+## Funcionalidades
+
+- Layout responsivo que se adapta a diferentes tamanhos de tela  
+- Navegação simples e intuitiva  
+- Estrutura semântica e organizada para facilitar manutenção e expansão futura  
+
+## Como Executar
+
+1. Clone o repositório:  
+   ```bash
+   git clone https://github.com/kayqueFranco/site.git
 
 
 
 
-# HTML5 e CSS3 
-Estudo do HTML5 e CSS3
 ## Autor
 Kayque Franco
 ## Site 
